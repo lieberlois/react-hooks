@@ -15,7 +15,9 @@ export default function UseMemo() {
 
   // Cache the value if num (dependency array) stays the same
   // Only recalculate when num changes!
-  const number = useMemo(() => slowFunction(num), [num]);
+  const number = useMemo(() => {
+    return slowFunction(num);
+  }, [num]);
 
   // This code would also recalculate number, when the toggle state changes.
   // const number = slowFunction(num);
