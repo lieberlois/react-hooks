@@ -7,7 +7,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>React Hooks</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -17,19 +16,25 @@ export default function Home() {
           <Link href="/usecontext">
             <a className={styles.card}>
               <h3>Use Context &rarr;</h3>
-              <p>Anwendung und Custom Hooks für React Context.</p>
+              <p>Anwendung und Custom Hooks für React Context</p>
             </a>
           </Link>
           <Link href="/usememo">
             <a className={styles.card}>
               <h3>Use Memo &rarr;</h3>
-              <p>Memoizing und der useMemo-Hook in Anwendung.</p>
+              <p>Memoizing und der useMemo-Hook in Anwendung</p>
             </a>
           </Link>
           <Link href="/usecallback">
             <a className={styles.card}>
               <h3>Use Callback &rarr;</h3>
-              <p>Memoized Functions und der useCallback-Hook in Anwendung.</p>
+              <p>Memoized Functions und der useCallback-Hook in Anwendung</p>
+            </a>
+          </Link>
+          <Link href="/usereducer">
+            <a className={styles.card}>
+              <h3>Use Reducer &rarr;</h3>
+              <p>React Reducers (nützlich für komplexen State)</p>
             </a>
           </Link>
         </div>

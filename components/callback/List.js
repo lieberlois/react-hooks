@@ -11,7 +11,7 @@ export default function NumberList({ getItems }) {
   return (
     <div>
       {items.map((item) => (
-        <div>{item}</div>
+        <div key={item}>{item}</div>
       ))}
     </div>
   );
